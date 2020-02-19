@@ -12,6 +12,8 @@
 - LARGURA E ALTURA
 ----------------------------------------------------
 */
+
+/*ALINHAMENTO E AGRUPAMENTO*/
 header, main, footer {
     text-align: center;
 }
@@ -20,4 +22,13 @@ header, main, footer {
 .donors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
+} 
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*AGRUPAMENTO E ESPAÇAMENTO*/
+header, .form, main {
+    margin-bottom: 70px;
 }
