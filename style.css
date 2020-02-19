@@ -35,5 +35,10 @@ header, main, footer {
 
 /*AGRUPAMENTO E ESPAÇAMENTO*/
 header, .form, main {
-    margin-bottom: 70px;
+    /*espaçamento com margem no topo, right, left e em baixo */
+    margin: 0 auto 70px;
+    /*limites dos elementos na página */
+    width: 90%;
+    max-width: 500px;
+
 }
