@@ -98,6 +98,10 @@ header button {
     margin: 70px 0px;            /* margem em cima, em baixo da imagem e laterais 0px */
 }
 
+header p {
+    font-size: 14px;
+}
+
 /* FORM */
 section.form {
     display: grid;
@@ -168,6 +172,11 @@ main .donors {
     border-radius: 50%;  /* deixa as bordas do before arredondadas */
     border-top-right-radius: 0; /* faz no elemento html a ponta da gotinha */
     transform: rotate(-45deg)   /* faz a rotação do elemento html */
+}
+
+.donor p {
+    margin-top: 24px;
+    font-size: 14px;
 }
 
 /*FOOTER*/
