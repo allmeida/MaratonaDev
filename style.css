@@ -27,6 +27,9 @@ body {
 header h1, main h2 {
     margin-bottom: 70px;
 }
+.form h2 {
+    text-align: right;
+}
 
 /*
 ----------------------------------------------------
@@ -54,10 +57,18 @@ header, .form, main {
 
 }
 
+/* HEADER */
+header button {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
 /* FORM */
 section.form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    grid-gap: 45px;             /* alinha o .form h2 via grid */
 }
 
 form input, /* cascata */
@@ -79,4 +90,6 @@ main .donors {
 /*ajustando body a todo o tamanho da pagina*/
 footer {
     margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eee;
 } 
