@@ -1,5 +1,17 @@
 /*
-CASCADING STYLESHEET => Folha de estilo em cascata
-
-
+----------------------------------------------------
+- CASCADING STYLESHEET => Folha de estilo em cascata
+- O CSS trabalha com seletores que fazem a conecção
+- de estilos que serão aplicados na tag html.
+---------------------------------------------------
 */
+
+/*
+----------------------------------------------------
+- ALINHAMENTOS E ESPAÇAMENTOS
+- LARGURA E ALTURA
+----------------------------------------------------
+*/
+header, main, footer {
+    text-align: center;
+}
