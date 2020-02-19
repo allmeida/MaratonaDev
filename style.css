@@ -139,6 +139,38 @@ main .donors {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
 } 
 
+.blood {
+    /* personalizando ultimos doadores */
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px;
+
+    /* ajuda na visualização do ::before */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+ /* ::before adiciona um elemento html dentro de bload para aplicar estilos */
+.blood::before {         
+    content: "";
+    background-color: #ff4f4f11;
+
+    width: 40px;
+    height: 40px;
+
+     /* cria uma nova camada com posicionamento absoluto  */
+    position: absolute;
+
+    /* criar a gotinha */
+    border-radius: 50%;  /* deixa as bordas do before arredondadas */
+    border-top-right-radius: 0; /* faz no elemento html a ponta da gotinha */
+    transform: rotate(-45deg)   /* faz a rotação do elemento html */
+}
+
+/*FOOTER*/
 /*ajustando body a todo o tamanho da pagina*/
 footer {
     margin-top: auto;
