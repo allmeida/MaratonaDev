@@ -6,6 +6,11 @@
 ---------------------------------------------------
 */
 
+/*Zerando margens automáticas*/
+html, body {
+    margin: 0;
+}
+
 /*
 ----------------------------------------------------
 - ALINHAMENTOS E ESPAÇAMENTOS
