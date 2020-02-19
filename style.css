@@ -6,13 +6,13 @@
 ---------------------------------------------------
 */
 
-/*Zerando margens automáticas*/
+/*GLOBAL*/
 html, body {
+    /*Zerando margens automáticas*/
     margin: 0;
 }
-
-/*redirecionando tamnhos das colunas*/
 body {
+    /*redirecionando tamnhos das colunas*/
     display: flex;
     flex-direction: column;
 
@@ -20,10 +20,14 @@ body {
     height: 100vh;
 }
 
-/*ajustando body a todo o tamanho da pagina*/
-footer {
-    margin-top: auto;
+/*
+-TITULOS
+-espaçamentos (Doe e Ultimos doadores)
+*/
+header h1, main h2 {
+    margin-bottom: 70px;
 }
+
 /*
 ----------------------------------------------------
 - ALINHAMENTOS E ESPAÇAMENTOS
@@ -31,27 +35,48 @@ footer {
 ----------------------------------------------------
 */
 
-/*ALINHAMENTO E AGRUPAMENTO*/
+/*
+-ESTRUTURA
+-ALINHAMENTO E AGRUPAMENTO
+*/
 header, main, footer {
+    /*alinhamento de textos*/
     text-align: center;
 }
-
-/* Acessando uma classe */
-.donors {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-} 
-.form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 /*AGRUPAMENTO E ESPAÇAMENTO*/
 header, .form, main {
     /*espaçamento com margem no topo, right, left e em baixo */
     margin: 0 auto 70px;
+
     /*limites dos elementos na página */
     width: 90%;
     max-width: 500px;
 
 }
+
+/* FORM */
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form input, /* cascata */
+form button {
+    width: 100%;                /* input com 100% na largura */
+    margin-bottom: 4px;         /* espaçamento entre os inputs */
+    box-sizing: border-box;     /* não permite que os inputs ultrapassem a largura definida */
+    padding: 8px 16px;          /* define tamanho em cima e em baixo */
+    border-radius: 4px;         /* define uma borda arredondada no input */
+    border: 1px red solid;    /* define a largura da linha e cor da borda */
+}
+
+/* MAIN */
+main .donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+} 
+
+/*ajustando body a todo o tamanho da pagina*/
+footer {
+    margin-top: auto;
+} 
