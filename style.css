@@ -99,15 +99,19 @@ section.form {
 
 form input, /* cascata */
 form button {
-    width: 100%;                /* input com 100% na largura */
-    margin-bottom: 4px;         /* espaçamento entre os inputs */
-    padding: 8px 16px;          /* define tamanho em cima e em baixo */
-    border-radius: 4px;         /* define uma borda arredondada no input */
-    border: 1px white solid;    /* define a largura da linha e cor da borda */
+    width: 100%;                      /* input com 100% na largura */
+    margin-bottom: 4px;               /* espaçamento entre os inputs */
+    padding: 8px 16px;                /* define tamanho em cima e em baixo */
+    border-radius: 4px;               /* define uma borda arredondada no input */
+    border: 1px #ffffff88 solid;    /* define a largura da linha e cor da borda */
 }
 
 form input {
-    background-color: transparent;
+    background-color: transparent;    /* transparencia apenas para o input */
+}
+
+form input::placeholder {             /* ::placeholder acessa dentro do input */
+    color: #ffffffaa;               /* aplica uma cor branca no texto dentro do input */
 }
 
 /* MAIN */
