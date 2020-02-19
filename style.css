@@ -154,7 +154,7 @@ main .donors {
 }
 
  /* ::before adiciona um elemento html dentro de bload para aplicar estilos */
-.blood::before {         
+ .blood::before {         
     content: "";
     background-color: #ff4f4f11;
 
