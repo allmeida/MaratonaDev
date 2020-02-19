@@ -40,6 +40,8 @@ header h1, main h2 {
 }
 .form h2 {
     text-align: right;
+    color: #ffffffee; /* aplica transparencia na cor de fundo do form */
+    font-size: 18px;
 }
 
 /*
@@ -91,6 +93,8 @@ section.form {
     background-color: #ff4f4f;      /* cor do formulario */
 
     padding: 16px 64px;
+
+    border-radius: 6px;               /* bordas arredondadas na caixa do form */
 }
 
 form input, /* cascata */
@@ -99,7 +103,11 @@ form button {
     margin-bottom: 4px;         /* espaçamento entre os inputs */
     padding: 8px 16px;          /* define tamanho em cima e em baixo */
     border-radius: 4px;         /* define uma borda arredondada no input */
-    border: 1px red solid;    /* define a largura da linha e cor da borda */
+    border: 1px white solid;    /* define a largura da linha e cor da borda */
+}
+
+form input {
+    background-color: transparent;
 }
 
 /* MAIN */
