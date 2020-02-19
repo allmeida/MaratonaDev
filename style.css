@@ -11,6 +11,19 @@ html, body {
     margin: 0;
 }
 
+/*redirecionando tamnhos das colunas*/
+body {
+    display: flex;
+    flex-direction: column;
+
+    /*altura*/
+    height: 100vh;
+}
+
+/*ajustando body a todo o tamanho da pagina*/
+footer {
+    margin-top: auto;
+}
 /*
 ----------------------------------------------------
 - ALINHAMENTOS E ESPAÇAMENTOS
