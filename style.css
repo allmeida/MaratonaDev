@@ -93,6 +93,11 @@ header button {
     font-weight: bold;
 }
 
+.logo {
+    width: 120px;                /* largura da imagem */
+    margin: 70px 0px;            /* margem em cima, em baixo da imagem e laterais 0px */
+}
+
 /* FORM */
 section.form {
     display: grid;
